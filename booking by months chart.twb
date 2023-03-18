@@ -1,0 +1,819 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0209.1653                               -->
+<workbook original-version='18.1' source-build='2022.4.1 (20224.23.0209.1653)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='hotel_bookings' inline='true' name='federated.18d8var1g6cy851e2tiqu0vnfabm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='002 hotel-bookings' name='excel-direct.19ttecb1fjexnh1asyqhg1uoeysh'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/[FreeCourseSite.com] Udemy - The Hands-On Masterclass in Data Analytics with Tableau/02 - Project 1  Park City Peaks Hotel/002 hotel-bookings.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.19ttecb1fjexnh1asyqhg1uoeysh' name='hotel_bookings' table='[hotel_bookings$]' type='table'>
+          <columns gridOrigin='A1:Z10001:no:A1:Z10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='booking_id' ordinal='0' />
+            <column datatype='string' name='hotel' ordinal='1' />
+            <column datatype='integer' name='is_canceled' ordinal='2' />
+            <column datatype='integer' name='lead_time' ordinal='3' />
+            <column datatype='integer' name='arrival_date_week_number' ordinal='4' />
+            <column datatype='date' name='booking_date' ordinal='5' />
+            <column datatype='date' name='arrival_date' ordinal='6' />
+            <column datatype='integer' name='arrival_date_day_of_month' ordinal='7' />
+            <column datatype='integer' name='stays_in_weekend_nights' ordinal='8' />
+            <column datatype='integer' name='stays_in_week_nights' ordinal='9' />
+            <column datatype='integer' name='adults' ordinal='10' />
+            <column datatype='integer' name='children' ordinal='11' />
+            <column datatype='integer' name='babies' ordinal='12' />
+            <column datatype='string' name='meal' ordinal='13' />
+            <column datatype='string' name='country' ordinal='14' />
+            <column datatype='string' name='market_segment' ordinal='15' />
+            <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+            <column datatype='integer' name='previous_cancellations' ordinal='17' />
+            <column datatype='string' name='assigned_room_type' ordinal='18' />
+            <column datatype='integer' name='booking_changes' ordinal='19' />
+            <column datatype='string' name='deposit_type' ordinal='20' />
+            <column datatype='string' name='agent' ordinal='21' />
+            <column datatype='string' name='company' ordinal='22' />
+            <column datatype='string' name='customer_type' ordinal='23' />
+            <column datatype='integer' name='required_car_parking_spaces' ordinal='24' />
+            <column datatype='integer' name='total_of_special_requests' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.19ttecb1fjexnh1asyqhg1uoeysh' name='hotel_bookings' table='[hotel_bookings$]' type='table'>
+          <columns gridOrigin='A1:Z10001:no:A1:Z10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='booking_id' ordinal='0' />
+            <column datatype='string' name='hotel' ordinal='1' />
+            <column datatype='integer' name='is_canceled' ordinal='2' />
+            <column datatype='integer' name='lead_time' ordinal='3' />
+            <column datatype='integer' name='arrival_date_week_number' ordinal='4' />
+            <column datatype='date' name='booking_date' ordinal='5' />
+            <column datatype='date' name='arrival_date' ordinal='6' />
+            <column datatype='integer' name='arrival_date_day_of_month' ordinal='7' />
+            <column datatype='integer' name='stays_in_weekend_nights' ordinal='8' />
+            <column datatype='integer' name='stays_in_week_nights' ordinal='9' />
+            <column datatype='integer' name='adults' ordinal='10' />
+            <column datatype='integer' name='children' ordinal='11' />
+            <column datatype='integer' name='babies' ordinal='12' />
+            <column datatype='string' name='meal' ordinal='13' />
+            <column datatype='string' name='country' ordinal='14' />
+            <column datatype='string' name='market_segment' ordinal='15' />
+            <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+            <column datatype='integer' name='previous_cancellations' ordinal='17' />
+            <column datatype='string' name='assigned_room_type' ordinal='18' />
+            <column datatype='integer' name='booking_changes' ordinal='19' />
+            <column datatype='string' name='deposit_type' ordinal='20' />
+            <column datatype='string' name='agent' ordinal='21' />
+            <column datatype='string' name='company' ordinal='22' />
+            <column datatype='string' name='customer_type' ordinal='23' />
+            <column datatype='integer' name='required_car_parking_spaces' ordinal='24' />
+            <column datatype='integer' name='total_of_special_requests' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Z10001:no:A1:Z10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[booking_id]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>booking_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hotel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[hotel]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>hotel</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_canceled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_canceled]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>is_canceled</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lead_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lead_time]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>lead_time</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_week_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_week_number]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>arrival_date_week_number</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[booking_date]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>booking_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[arrival_date]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>arrival_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_day_of_month]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>arrival_date_day_of_month</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_weekend_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_weekend_nights]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>stays_in_weekend_nights</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_week_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_week_nights]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>stays_in_week_nights</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adults</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adults]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>adults</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[children]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>children</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>babies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[babies]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>babies</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meal</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meal]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>meal</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[market_segment]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>market_segment</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_repeated_guest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_repeated_guest]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>is_repeated_guest</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_cancellations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous_cancellations]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>previous_cancellations</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assigned_room_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[assigned_room_type]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>assigned_room_type</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_changes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[booking_changes]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>booking_changes</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deposit_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[deposit_type]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>deposit_type</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[agent]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>agent</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_type]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>customer_type</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>required_car_parking_spaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[required_car_parking_spaces]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>required_car_parking_spaces</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_of_special_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_of_special_requests]</local-name>
+            <parent-name>[hotel_bookings]</parent-name>
+            <remote-alias>total_of_special_requests</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='hotel_bookings' datatype='table' name='[__tableau_internal_object_id__].[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]' role='measure' type='quantitative' />
+      <column caption='Adults' datatype='integer' name='[adults]' role='measure' type='quantitative' />
+      <column caption='Agent' datatype='string' name='[agent]' role='dimension' type='nominal' />
+      <column caption='Arrival Date' datatype='date' name='[arrival_date]' role='dimension' type='ordinal' />
+      <column caption='Arrival Date Day Of Month' datatype='integer' name='[arrival_date_day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Arrival Date Week Number' datatype='integer' name='[arrival_date_week_number]' role='dimension' type='ordinal' />
+      <column caption='Assigned Room Type' datatype='string' name='[assigned_room_type]' role='dimension' type='nominal' />
+      <column caption='Babies' datatype='integer' name='[babies]' role='measure' type='quantitative' />
+      <column caption='Booking Changes' datatype='integer' name='[booking_changes]' role='measure' type='quantitative' />
+      <column caption='Booking Date' datatype='date' name='[booking_date]' role='dimension' type='ordinal' />
+      <column caption='Booking Id' datatype='integer' name='[booking_id]' role='dimension' type='ordinal' />
+      <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' hidden='true' name='[company]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Type' datatype='string' name='[customer_type]' role='dimension' type='nominal' />
+      <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+      <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Booking Types' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='confirmed' />
+          <alias key='1' value='cancelled' />
+        </aliases>
+      </column>
+      <column caption='Is Repeated Guest' datatype='integer' name='[is_repeated_guest]' role='measure' type='quantitative' />
+      <column caption='Lead Time' datatype='integer' name='[lead_time]' role='measure' type='quantitative' />
+      <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+      <column caption='Meal' datatype='string' name='[meal]' role='dimension' type='nominal' />
+      <column caption='Previous Cancellations' datatype='integer' name='[previous_cancellations]' role='measure' type='quantitative' />
+      <column caption='Required Car Parking Spaces' datatype='integer' name='[required_car_parking_spaces]' role='measure' type='quantitative' />
+      <column caption='Stays In Week Nights' datatype='integer' name='[stays_in_week_nights]' role='measure' type='quantitative' />
+      <column caption='Stays In Weekend Nights' datatype='integer' name='[stays_in_weekend_nights]' role='measure' type='quantitative' />
+      <column caption='Total Of Special Requests' datatype='integer' name='[total_of_special_requests]' role='measure' type='quantitative' />
+      <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:is_canceled:ok]' type='palette'>
+            <map to='#76b7b2'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='hotel_bookings' id='hotel!bookings_9374461E6A754251ACD7948E10ED36F8'>
+            <properties context=''>
+              <relation connection='excel-direct.19ttecb1fjexnh1asyqhg1uoeysh' name='hotel_bookings' table='[hotel_bookings$]' type='table'>
+                <columns gridOrigin='A1:Z10001:no:A1:Z10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='booking_id' ordinal='0' />
+                  <column datatype='string' name='hotel' ordinal='1' />
+                  <column datatype='integer' name='is_canceled' ordinal='2' />
+                  <column datatype='integer' name='lead_time' ordinal='3' />
+                  <column datatype='integer' name='arrival_date_week_number' ordinal='4' />
+                  <column datatype='date' name='booking_date' ordinal='5' />
+                  <column datatype='date' name='arrival_date' ordinal='6' />
+                  <column datatype='integer' name='arrival_date_day_of_month' ordinal='7' />
+                  <column datatype='integer' name='stays_in_weekend_nights' ordinal='8' />
+                  <column datatype='integer' name='stays_in_week_nights' ordinal='9' />
+                  <column datatype='integer' name='adults' ordinal='10' />
+                  <column datatype='integer' name='children' ordinal='11' />
+                  <column datatype='integer' name='babies' ordinal='12' />
+                  <column datatype='string' name='meal' ordinal='13' />
+                  <column datatype='string' name='country' ordinal='14' />
+                  <column datatype='string' name='market_segment' ordinal='15' />
+                  <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+                  <column datatype='integer' name='previous_cancellations' ordinal='17' />
+                  <column datatype='string' name='assigned_room_type' ordinal='18' />
+                  <column datatype='integer' name='booking_changes' ordinal='19' />
+                  <column datatype='string' name='deposit_type' ordinal='20' />
+                  <column datatype='string' name='agent' ordinal='21' />
+                  <column datatype='string' name='company' ordinal='22' />
+                  <column datatype='string' name='customer_type' ordinal='23' />
+                  <column datatype='integer' name='required_car_parking_spaces' ordinal='24' />
+                  <column datatype='integer' name='total_of_special_requests' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Booking by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold' fontsize='12'>Numbers of Bookings </run>
+            <run fontalignment='1' fontcolor='#9d7660' fontname='Tableau Bold' fontsize='12'>Confirmed</run>
+            <run fontalignment='1' fontname='Tableau Bold' fontsize='12'> and </run>
+            <run fontalignment='1' fontcolor='#76b7b2' fontname='Tableau Bold' fontsize='12'>Cancellations per </run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Month</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#9d7660' fontname='Tableau Bold' fontsize='12'>Brown:Confirmed Bookings</run>
+            <run fontalignment='1' fontcolor='#76b7b2' fontname='Tableau Bold' fontsize='12'>;Blue:Cancelled Bookings</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_bookings' name='federated.18d8var1g6cy851e2tiqu0vnfabm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18d8var1g6cy851e2tiqu0vnfabm'>
+            <_.fcp.ObjectModelTableType.false...column caption='hotel_bookings' datatype='integer' name='[__tableau_internal_object_id__].[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:hotel!bookings_9374461E6A754251ACD7948E10ED36F8:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='hotel_bookings' datatype='table' name='[__tableau_internal_object_id__].[hotel!bookings_9374461E6A754251ACD7948E10ED36F8]' role='measure' type='quantitative' />
+            <column caption='Booking Date' datatype='date' name='[booking_date]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Booking Types' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='confirmed' />
+                <alias key='1' value='cancelled' />
+              </aliases>
+            </column>
+            <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[booking_date]' derivation='Month-Trunc' name='[tmn:booking_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18d8var1g6cy851e2tiqu0vnfabm].[none:is_canceled:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-color' value='#72b966' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.18d8var1g6cy851e2tiqu0vnfabm].[__tableau_internal_object_id__].[cnt:hotel!bookings_9374461E6A754251ACD7948E10ED36F8:qk]</rows>
+        <cols>[federated.18d8var1g6cy851e2tiqu0vnfabm].[tmn:booking_date:qk]</cols>
+      </table>
+      <simple-id uuid='{59C7797C-E3A1-4C11-AABB-2D175F620EF6}' />
+    </worksheet>
+  </worksheets>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' maximized='true' name='Booking by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.18d8var1g6cy851e2tiqu0vnfabm].[none:is_canceled:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.18d8var1g6cy851e2tiqu0vnfabm].[none:is_canceled:ok]</field>
+            <field>[federated.18d8var1g6cy851e2tiqu0vnfabm].[yr:booking_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{502493C6-3E0D-4ADE-95A6-DAFBFB8DC1BE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Booking by Month' width='192'>
+      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
+      ARCh9u/SmXPhap58hgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
